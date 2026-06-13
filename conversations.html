@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conversations – Speakly</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="loading-screen">
+    <div class="loader-logo">Speak<span>ly</span></div>
+    <div class="loader-bar"><div class="loader-progress"></div></div>
+  </div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">Speak<span>ly</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="conversations.html" class="active">Conversations</a>
+      <a href="vocabulary.html">Vocabulary</a>
+      <a href="grammar.html">Grammar</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-actions">
+      <button id="dark-mode-toggle" class="dark-toggle">☀️ Light</button>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="conversations.html">Conversations</a>
+    <a href="vocabulary.html">Vocabulary</a>
+    <a href="grammar.html">Grammar</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <span class="section-eyebrow">Practice Makes Perfect</span>
+    <h1 class="page-hero-title">Daily <span style="color: var(--primary);">Conversations</span></h1>
+    <p class="page-hero-desc">Real-world English dialogues to help you communicate in everyday situations.</p>
+  </div>
+
+  <!-- Search & Filter -->
+  <section class="section" style="padding-top: 0;">
+    <div class="section-container">
+
+      <div class="conversations-header fade-in">
+        <div class="search-filter-bar">
+          <div class="search-input-wrap">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="conv-search" placeholder="Search conversations…" />
+          </div>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="campus">Campus</button>
+            <button class="filter-btn" data-filter="restaurant">Restaurant</button>
+            <button class="filter-btn" data-filter="interview">Interview</button>
+            <button class="filter-btn" data-filter="shopping">Shopping</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conversation Cards -->
+      <div class="conversations-grid" style="margin-top: 2rem;">
+
+        <!-- At Campus -->
+        <div class="conv-card fade-in fade-in-delay-1" data-category="campus">
+          <img class="conv-card-image" src="images/campus.png" alt="At Campus" />
+          <div class="conv-card-body">
+            <span class="conv-category">🎓 Campus</span>
+            <h3 class="conv-title">At Campus</h3>
+            <div class="conv-dialog">
+              <div class="dialog-line">
+                <span class="dialog-speaker">Student A:</span>
+                <span class="dialog-text">Good morning. Is this seat available?</span>
+              </div>
+              <div class="dialog-line">
+                <span class="dialog-speaker">Student B:</span>
+                <span class="dialog-text">Yes, please have a seat.</span>
+              </div>
+              <div class="dialog-line">
+                <span class="dialog-speaker">Student A:</span>
+                <span class="dialog-text">Thank you.</span>
+              </div>
+              <div class="dialog-line">
+                <span class="dialog-speaker">Student B:</span>
+                <span class="dialog-text">You're welcome.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- At Restaurant -->
+        <div class="conv-card fade-in fade-in-delay-2" data-category="restaurant">
+          <img class="conv-card-image" src="images/restaurant.png" alt="At Restaurant" />
+          <div class="conv-card-body">
+            <span class="conv-category">🍽️ Restaurant</span>
+            <h3 class="conv-title">At Restaurant</h3>
+            <div class="conv-dialog">
+              <div class="dialog-line">
+                <span class="dialog-speaker">Customer:</span>
+                <span class="dialog-text">May I see the menu, please?</span>
+              </div>
+              <div class="dialog-line">
+                <span class="dialog-speaker">Waiter:</span>
+                <span class="dialog-text">Of course. Here it is.</span>
+              </div>
+              <div class="dialog-line">
+                <span class="dialog-speaker">Customer:</span>
+                <span class="dialog-text">Thank you.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job Interview -->
+        <div class="conv-card fade-in fade-in-delay-3" data-category="interview">
+          <img class="conv-card-image" src="images/interview.png" alt="Job Interview" />
+          <div class="conv-card-body">
+            <span class="conv-category">💼 Interview</span>
+            <h3 class="conv-title">Job Interview</h3>
+            <div class="conv-dialog">
+              <div class="dialog-line">
+                <span class="dialog-speaker">Interviewer:</span>
+                <span class="dialog-text">Tell me about yourself.</span>
+              </div>
+              <div class="dialog-line">
+                <span class="dialog-speaker">Applicant:</span>
+                <span class="dialog-text">My name is Abdullah. I am a student majoring in Software Engineering.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shopping -->
+        <div class="conv-card fade-in fade-in-delay-4" data-category="shopping">
+          <img class="conv-card-image" src="images/shopping.png" alt="Shopping" />
+          <div class="conv-card-body">
+            <span class="conv-category">🛍️ Shopping</span>
+            <h3 class="conv-title">Shopping</h3>
+            <div class="conv-dialog">
+              <div class="dialog-line">
+                <span class="dialog-speaker">Customer:</span>
+                <span class="dialog-text">How much is this shirt?</span>
+              </div>
+              <div class="dialog-line">
+                <span class="dialog-speaker">Seller:</span>
+                <span class="dialog-text">It costs ten dollars.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end grid -->
+
+      <!-- Tip box -->
+      <div class="fade-in" style="margin-top: 3rem; background: rgba(16,185,129,0.06); border: 1px solid rgba(16,185,129,0.2); border-radius: 16px; padding: 2rem;">
+        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;">💡 Practice Tip</h3>
+        <p style="font-size: 0.875rem; color: var(--muted); line-height: 1.7;">
+          Read each dialogue aloud with a partner. Focus on natural pronunciation and intonation.
+          Practicing with a friend helps you build confidence much faster than studying alone.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-name">Speak<span>ly</span></div>
+          <p class="footer-brand-desc">A modern English learning platform for students who want to speak confidently in the real world.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="conversations.html">Conversations</a></li>
+            <li><a href="vocabulary.html">Vocabulary</a></li>
+            <li><a href="grammar.html">Grammar</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Learn</h4>
+          <ul>
+            <li><a href="quiz.html">Take Quiz</a></li>
+            <li><a href="grammar.html">Grammar Tips</a></li>
+            <li><a href="vocabulary.html">Word Bank</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Project</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">Developer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 <strong>Speakly</strong> · Built with <span class="footer-heart">♥</span></p>
+        <p class="footer-copy">English Conversation 2 · Teknologi Rekayasa Perangkat Lunak</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" title="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>

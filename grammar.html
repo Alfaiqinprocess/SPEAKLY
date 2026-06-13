@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grammar Tips – Speakly</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="loading-screen">
+    <div class="loader-logo">Speak<span>ly</span></div>
+    <div class="loader-bar"><div class="loader-progress"></div></div>
+  </div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">Speak<span>ly</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="conversations.html">Conversations</a>
+      <a href="vocabulary.html">Vocabulary</a>
+      <a href="grammar.html" class="active">Grammar</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-actions">
+      <button id="dark-mode-toggle" class="dark-toggle">☀️ Light</button>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="conversations.html">Conversations</a>
+    <a href="vocabulary.html">Vocabulary</a>
+    <a href="grammar.html">Grammar</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <span class="section-eyebrow">Structured Learning</span>
+    <h1 class="page-hero-title">Grammar <span style="color: var(--primary);">Tips</span></h1>
+    <p class="page-hero-desc">Master English grammar with clear formulas, structured examples, and interactive lessons.</p>
+  </div>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="section-container">
+
+      <!-- Intro banner -->
+      <div class="fade-in" style="background: rgba(16,185,129,0.06); border: 1px solid rgba(16,185,129,0.2); border-radius: 16px; padding: 1.5rem 2rem; margin-bottom: 2.5rem; display: flex; align-items: center; gap: 1rem;">
+        <span style="font-size: 2rem;">📝</span>
+        <div>
+          <strong style="font-size: 0.95rem;">How to use these lessons</strong>
+          <p style="font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem;">Click on any lesson card to expand it. Read the formula, study the examples, and try writing your own sentences.</p>
+        </div>
+      </div>
+
+      <!-- Accordion Lessons -->
+      <div class="grammar-lessons">
+
+        <!-- Lesson 1 -->
+        <div class="lesson-card fade-in fade-in-delay-1" id="lesson-1">
+          <div class="lesson-header" onclick="toggleLesson('lesson-1')">
+            <div class="lesson-header-left">
+              <div class="lesson-number">01</div>
+              <div>
+                <div class="lesson-title-text">Simple Present Tense</div>
+                <div class="lesson-subtitle">Used for habits, facts, and routines</div>
+              </div>
+            </div>
+            <div class="lesson-toggle">▼</div>
+          </div>
+          <div class="lesson-body" id="lesson-1-body">
+            <div class="lesson-content">
+              <div class="formula-box">
+                <div class="formula-label">Formula</div>
+                <div class="formula-text">Subject + Verb 1 + Object</div>
+              </div>
+              <div class="examples-label">Examples</div>
+              <div class="example-item">
+                <div class="example-bullet"></div>
+                <div>I study English every day.</div>
+              </div>
+              <div class="example-item">
+                <div class="example-bullet"></div>
+                <div>She speaks English fluently.</div>
+              </div>
+              <div class="example-item">
+                <div class="example-bullet"></div>
+                <div>They practice grammar at school.</div>
+              </div>
+              <div class="example-item">
+                <div class="example-bullet"></div>
+                <div>He reads a book every morning.</div>
+              </div>
+
+              <div style="margin-top: 1.5rem; padding: 1rem 1.25rem; background: rgba(16,185,129,0.06); border-radius: 10px;">
+                <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.7;">
+                  <strong style="color: var(--text);">💡 Note:</strong> For third-person singular (he/she/it), add <strong>-s</strong> or <strong>-es</strong> to the verb.
+                  Example: <em>He speaks</em>, <em>She reads</em>, <em>It works</em>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lesson 2 -->
+        <div class="lesson-card fade-in fade-in-delay-2" id="lesson-2">
+          <div class="lesson-header" onclick="toggleLesson('lesson-2')">
+            <div class="lesson-header-left">
+              <div class="lesson-number">02</div>
+              <div>
+                <div class="lesson-title-text">Simple Past Tense</div>
+                <div class="lesson-subtitle">Used for completed actions in the past</div>
+              </div>
+            </div>
+            <div class="lesson-toggle">▼</div>
+          </div>
+          <div class="lesson-body" id="lesson-2-body">
+            <div class="lesson-content">
+              <div class="formula-box">
+                <div class="formula-label">Formula</div>
+                <div class="formula-text">Subject + Verb 2 + Object</div>
+              </div>
+              <div class="examples-label">Examples</div>
+              <div class="example-item">
+                <div class="example-bullet"></div>
+                <div>I visited Jakarta last week.</div>
+              </div>
+              <div class="example-item">
+                <div class="example-bullet"></div>
+                <div>They watched a movie yesterday.</div>
+              </div>
+              <div class="example-item">
+                <div class="example-bullet"></div>
+                <div>She studied hard for the exam.</div>
+              </div>
+              <div class="example-item">
+                <div class="example-bullet"></div>
+                <div>He spoke English at the interview.</div>
+              </div>
+
+              <div style="margin-top: 1.5rem; padding: 1rem 1.25rem; background: rgba(16,185,129,0.06); border-radius: 10px;">
+                <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.7;">
+                  <strong style="color: var(--text);">💡 Note:</strong> Regular verbs add <strong>-ed</strong> in past tense (study → studied, visit → visited).
+                  Irregular verbs change form (speak → spoke, watch → watched).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Reference Table -->
+      <div class="fade-in" style="margin-top: 3rem;">
+        <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center;">Quick Reference Chart</h3>
+        <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; overflow: hidden;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
+            <thead>
+              <tr style="background: rgba(16,185,129,0.1);">
+                <th style="padding: 1rem 1.5rem; text-align: left; font-weight: 700; color: var(--primary);">Tense</th>
+                <th style="padding: 1rem 1.5rem; text-align: left; font-weight: 700; color: var(--primary);">Formula</th>
+                <th style="padding: 1rem 1.5rem; text-align: left; font-weight: 700; color: var(--primary);">Usage</th>
+                <th style="padding: 1rem 1.5rem; text-align: left; font-weight: 700; color: var(--primary);">Signal Words</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-top: 1px solid var(--border);">
+                <td style="padding: 1rem 1.5rem; font-weight: 600;">Simple Present</td>
+                <td style="padding: 1rem 1.5rem; color: var(--muted);">S + V1 + O</td>
+                <td style="padding: 1rem 1.5rem; color: var(--muted);">Habits, facts, routines</td>
+                <td style="padding: 1rem 1.5rem; color: var(--primary);">every day, always, usually</td>
+              </tr>
+              <tr style="border-top: 1px solid var(--border);">
+                <td style="padding: 1rem 1.5rem; font-weight: 600;">Simple Past</td>
+                <td style="padding: 1rem 1.5rem; color: var(--muted);">S + V2 + O</td>
+                <td style="padding: 1rem 1.5rem; color: var(--muted);">Completed past actions</td>
+                <td style="padding: 1rem 1.5rem; color: var(--primary);">yesterday, last week, ago</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="fade-in" style="text-align: center; margin-top: 3rem;">
+        <p style="color: var(--muted); margin-bottom: 1.25rem; font-size: 0.95rem;">Ready to test your grammar knowledge?</p>
+        <a href="quiz.html" class="btn-primary">🎯 Take the Quiz</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-name">Speak<span>ly</span></div>
+          <p class="footer-brand-desc">A modern English learning platform for students who want to speak confidently in the real world.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="conversations.html">Conversations</a></li>
+            <li><a href="vocabulary.html">Vocabulary</a></li>
+            <li><a href="grammar.html">Grammar</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Learn</h4>
+          <ul>
+            <li><a href="quiz.html">Take Quiz</a></li>
+            <li><a href="vocabulary.html">Word Bank</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Project</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 <strong>Speakly</strong> · Built with <span class="footer-heart">♥</span></p>
+        <p class="footer-copy">English Conversation 2 · Teknologi Rekayasa Perangkat Lunak</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" title="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script>
+    // Accordion toggle
+    function toggleLesson(id) {
+      const card = document.getElementById(id);
+      const body = document.getElementById(id + '-body');
+      const isOpen = card.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.lesson-card').forEach(c => c.classList.remove('open'));
+      document.querySelectorAll('.lesson-body').forEach(b => b.classList.remove('open'));
+
+      // Toggle current
+      if (!isOpen) {
+        card.classList.add('open');
+        body.classList.add('open');
+      }
+    }
+  </script>
+</body>
+</html>

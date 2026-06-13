@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz – Speakly</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="loading-screen">
+    <div class="loader-logo">Speak<span>ly</span></div>
+    <div class="loader-bar"><div class="loader-progress"></div></div>
+  </div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">Speak<span>ly</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="conversations.html">Conversations</a>
+      <a href="vocabulary.html">Vocabulary</a>
+      <a href="grammar.html">Grammar</a>
+      <a href="quiz.html" class="active">Quiz</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-actions">
+      <button id="dark-mode-toggle" class="dark-toggle">☀️ Light</button>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="conversations.html">Conversations</a>
+    <a href="vocabulary.html">Vocabulary</a>
+    <a href="grammar.html">Grammar</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <span class="section-eyebrow">Test Your Skills</span>
+    <h1 class="page-hero-title">Interactive <span style="color: var(--primary);">Quiz</span></h1>
+    <p class="page-hero-desc">10 multiple-choice questions on vocabulary, grammar, and conversations. How well do you know English?</p>
+  </div>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="section-container">
+      <div class="quiz-wrapper">
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen">
+
+          <!-- Progress -->
+          <div class="quiz-progress-wrap fade-in">
+            <div class="quiz-progress-info">
+              <span class="quiz-question-count" id="question-count">Question 1 of 10</span>
+              <span class="quiz-score-display" id="score-display">Score: 0</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" id="progress-fill" style="width: 10%;"></div>
+            </div>
+          </div>
+
+          <!-- Question Card -->
+          <div class="quiz-card fade-in fade-in-delay-1">
+            <p class="quiz-question-text" id="quiz-question">Loading question…</p>
+            <div class="quiz-options" id="quiz-options"></div>
+          </div>
+
+          <!-- Controls -->
+          <div class="quiz-controls fade-in fade-in-delay-2">
+            <button id="prev-btn" class="btn-secondary" style="display:none;">← Previous</button>
+            <div style="flex:1;"></div>
+            <button id="next-btn" class="btn-primary" style="display:none;">Next →</button>
+            <button id="submit-btn" class="btn-primary" style="display:none;">🏁 Submit Quiz</button>
+          </div>
+
+        </div>
+
+        <!-- Result Screen -->
+        <div class="result-screen fade-in" id="result-screen">
+          <div class="result-emoji" id="result-emoji">🎉</div>
+          <h2 class="result-title">Quiz Complete!</h2>
+          <div class="result-score" id="result-score">0/10</div>
+          <div class="result-percent" id="result-percent">0%</div>
+          <div class="result-level" id="result-level">Loading…</div>
+          <p class="result-message" id="result-message"></p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <button id="restart-btn" class="btn-primary">🔄 Try Again</button>
+            <a href="grammar.html" class="btn-secondary">📝 Review Grammar</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-name">Speak<span>ly</span></div>
+          <p class="footer-brand-desc">A modern English learning platform for students who want to speak confidently in the real world.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="conversations.html">Conversations</a></li>
+            <li><a href="vocabulary.html">Vocabulary</a></li>
+            <li><a href="grammar.html">Grammar</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Learn</h4>
+          <ul>
+            <li><a href="quiz.html">Take Quiz</a></li>
+            <li><a href="grammar.html">Grammar Tips</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Project</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 <strong>Speakly</strong> · Built with <span class="footer-heart">♥</span></p>
+        <p class="footer-copy">English Conversation 2 · Teknologi Rekayasa Perangkat Lunak</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" title="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>
